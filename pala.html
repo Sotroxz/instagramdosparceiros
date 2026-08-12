@@ -1,0 +1,245 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram dos Parceros</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+            background:
+                radial-gradient(circle at top, #202040 0%, #0b0b12 45%, #050507 100%);
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        h1 {
+            font-size: clamp(40px, 8vw, 75px);
+            color: white;
+            margin-bottom: 15px;
+
+            text-shadow:
+                0 0 10px #5865f2,
+                0 0 25px #5865f2,
+                0 0 50px #5865f2;
+
+            animation: aparecer 1s ease;
+        }
+
+        .subtitulo {
+            color: #aaa;
+            font-size: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 22px;
+
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 20px;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #5865f2;
+
+            box-shadow:
+                0 10px 30px rgba(88, 101, 242, 0.25);
+        }
+
+        .nome {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .instagram {
+            color: #aaa;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .botao {
+            text-decoration: none;
+            color: white;
+
+            padding: 12px 20px;
+
+            border-radius: 12px;
+
+            background: linear-gradient(
+                135deg,
+                #833ab4,
+                #fd1d1d,
+                #fcb045
+            );
+
+            font-weight: bold;
+
+            transition: 0.3s ease;
+
+            box-shadow: 0 0 15px rgba(253, 29, 29, 0.25);
+        }
+
+        .botao:hover {
+            transform: scale(1.08);
+
+            box-shadow:
+                0 0 20px rgba(253, 29, 29, 0.6);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 500px) {
+            body {
+                padding: 30px 15px;
+            }
+
+            .card {
+                flex-direction: column;
+                gap: 18px;
+                text-align: center;
+            }
+
+            .botao {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Instagram dos Parceros</h1>
+        <p class="subtitulo">Encontre o Instagram da galera 👇</p>
+    </header>
+
+    <main class="container">
+
+        <div class="card">
+            <div>
+                <div class="nome">Rafael Cobra</div>
+                <div class="instagram">@rafael.cobraaa</div>
+            </div>
+
+            <a class="botao"
+               href="https://www.instagram.com/rafael.cobraaa/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="nome">Rebeca</div>
+                <div class="instagram">@berreca_wwpv</div>
+            </div>
+
+            <a class="botao"
+               href="https://www.instagram.com/berreca_wwpv/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="nome">Rafael Jeferson</div>
+                <div class="instagram">@faeel_.sz</div>
+            </div>
+
+            <a class="botao"
+               href="https://www.instagram.com/faeel_.sz/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="nome">Daniela</div>
+                <div class="instagram">@ww.danix</div>
+            </div>
+
+            <a class="botao"
+               href="https://www.instagram.com/ww.danix/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+        <div class="card">
+            <div>
+                <div class="nome">Pedrin</div>
+                <div class="instagram">@pedrinho.fxx_</div>
+            </div>
+
+            <a class="botao"
+               href="https://www.instagram.com/pedrinho.fxx_/"
+               target="_blank">
+                Instagram
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        Feito pelos parceros 🚀
+    </footer>
+
+</body>
+
+</html>
+```
